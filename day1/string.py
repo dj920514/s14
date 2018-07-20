@@ -36,11 +36,24 @@ print("1.23".isdecimal())    #
 print('1aa'.isidentifier()) # 判断是不是一个合法的标识符（变量名），此处会返回false、
 
 print('asb'.islower())  # 是否全为小写
+print('ABC'.isupper())  # 是否全为大写
 
 print('33.33'.isnumeric()) #全部字符都为数字时，返回正确
 print('  '.isspace())  #字符串是否完全为空格
 print('My Name Is'.istitle()) # 是否每个首字符都是大写
-print()
+
+print('+'.join(['1','2','3','4']))
+print('hello'.ljust(50,'*'))  # 保证字符串长50个字符，若不足则在右侧用*补齐
+print('hello'.rjust(50,'*'))  # 保证字符串长50个字符，若不足则在左侧用*补齐
+
+print('HELLO'.lower())  # 大写转小写
+print('hello'.upper())  # 小写转大写
+
+print('----')
+print('\nAlex'.lstrip())  #去掉左边的换行或回车
+print('----')
+print('Alex\n'.rstrip())  #去掉右边的换行或回车
+
 
 
 
