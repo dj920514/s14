@@ -54,6 +54,18 @@ print('\nAlex'.lstrip())  #去掉左边的换行或回车
 print('----')
 print('Alex\n'.rstrip())  #去掉右边的换行或回车
 
+p = str.maketrans("abcdef","123456")  # 定义一组对应关系p
+print("dai".translate(p))               #  以p所定义的关系对dai进行转换
+
+print('daijin'.replace('i','I',1))      # 替换，将i替换为I，最后一位表示替换几个
+print('daijin'.rfind('i'))      # 从左往右，找到最右侧i的下标，0为起始位
+print('1+2+3+4'.split('+'))     # 将1+2+3+4，以+号分隔为列表
+print('hello\nworld'.splitlines()) # 按照换行符来分隔列表
+
+print('DaiJin'.swapcase())  #大小写互换
+print('dai jin'.title())    #首字母大写，空格后也是
+print('12'.zfill(4))        # 左侧补零填充，共4位
+
 
 
 
